@@ -5,12 +5,15 @@ import type {
 
 declare global {
 	interface Uint8Array {
-		toBase64(options?: Base64EncodingOptions): string;
+		toBase64(options?: Base64EncodingOptions | undefined): string;
 		toHex(): string;
 	}
 
 	interface Uint8ArrayConstructor {
-		fromBase64(input: string, options?: Base64DecodingOptions): Uint8Array;
+		fromBase64(
+			input: string,
+			options?: Base64DecodingOptions | undefined,
+		): Uint8Array;
 		fromBase64Into(
 			input: string,
 			into?: Uint8Array | undefined,
