@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+
+		"forceConsistentCasingInFileNames": true,
+
+		"module": "esnext",
+		"moduleDetection": "force",
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+
+		"target": "esnext",
+		"lib": ["esnext"],
+
+		"noEmit": true
+	},
+	"include": ["playground/**/*"]
+}
