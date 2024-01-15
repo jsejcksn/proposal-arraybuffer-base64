@@ -124,12 +124,13 @@ function skipAsciiWhitespace(string, index) {
 }
 
 function fromBase64(string, alphabet, lastChunkHandling, maxLength) {
+  let read = 0;
+  let bytes = [];
+
   if (maxLength === 0) {
     return { read, bytes };
   }
 
-  let read = 0;
-  let bytes = [];
   let chunk = '';
 
   let index = 0
