@@ -27,11 +27,11 @@ export declare function base64ToUint8Array(
 	string: string,
 	options?: Base64DecodingOptions | undefined,
 	into?: Uint8Array | undefined,
-): Uint8Array;
+): { bytes: Uint8Array; read: number };
 
 export declare function uint8ArrayToHex(arr: ArrayLike<number>): string;
 
 export declare function hexToUint8Array(
 	string: string,
 	into?: Uint8Array | undefined,
-): Uint8Array;
+): { bytes: Uint8Array; read: number };
